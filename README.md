@@ -2,5 +2,5 @@
 Week 1 Assignment 1
 
 Author: 			Moses Permaul
-Permsonal Email: 	moses.permaul@hotmail.com
-School Email: 		moses.permaul13@spsmail.cuny.edu 
+Personal Email: 	moses.permaul@hotmail.com
+CUNY SPS Email: 	moses.permaul13@spsmail.cuny.edu 
