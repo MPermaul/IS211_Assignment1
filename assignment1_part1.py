@@ -13,7 +13,6 @@ def listDivide (numbers, divide = 2):
 
         >>> listDivide([30,54,63,98,100], divide=10)
         >>> 2
-
     '''
     # variable to store how many items are divisible by divide
     num_divisible = 0 
@@ -32,18 +31,23 @@ class ListDivideException(Exception):
 
 def testListDivide():
     '''Function that contains test scenarios for listDivide function. Error raised if tests fail.'''
-
-    # try to run each test scenario
+    # try to run each test scenario and raise error is item in list can't be divided
     try:
-        listDivide([1,2,3,4,5])
-        listDivide([2,4,6,8,10])
-        listDivide([30, 54, 63,98, 100], divide=10)
-        listDivide([])
-        listDivide([1,2,3,4,5], 1)
+        a_test = listDivide([1,2,3,4,5])
+        b_test = listDivide([2,4,6,8,10])
+        c_test = listDivide([30,54,63,98,100], divide=10)
+        d_test = listDivide([])
+        e_test = listDivide([1,2,3,4,5], 1)
     except:
         # raise ListDivideException if there is an error
-        raise ListDivideException('Item in one of the lists is not an INT.')
+        raise ListDivideException('There is a non divisible value in one of the lists!')
 
+    # check that each test list has the correct return values
+    if a_test == 2 and b_test == 5 and c_test == 2 and d_test == 0 and e_test == 5:
+        pass
+    else:
+        raise ListDivideException('There is a return value problem with the tests.')    
+  
 
 testListDivide()
 
